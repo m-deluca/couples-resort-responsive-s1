@@ -38,3 +38,105 @@ input, textarea {
 }
 
 /* 2. ---Main Nav--- */
+
+#main-nav button {
+   width: 20px;
+   height: 20px;
+   background: url(../images/burger.svg) no-repeat center;
+   margin-top: 15px;
+   margin-bottom: 20px;
+   transition: all .5s ease;
+   border: 0;
+}
+
+#main-nav button.expanded {
+   transform: rotate(90deg);
+}
+
+#burger-con {
+   margin-top: 20px;
+   margin-bottom: 20px;
+   display: none;
+}
+
+#burger-con.slide-toggle {
+   display: block;
+}
+
+#main-nav ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+#main-nav ul li a {
+   display: block;
+   padding: 10px 0 10px 0;
+   text-align: center;
+   color: #626262;
+}
+
+#main-nav ul li a:hover {
+   color: #9a2018;
+}
+
+#main-nav ul li {
+   border-bottom: 1px solid #efefef;
+}
+
+#main-nav ul li:first-child {
+   border-top: 1px solid #efefef;
+}
+
+#main-nav ul li:last-child {
+   margin-bottom: 10px;
+}
+
+.book-now {
+   background-color: #9a2018;
+   color: #fff;
+   font-size: 16px;
+   font-style: italic;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: all 0.3s ease-in-out;
+}
+
+.book-now:hover {
+   box-shadow: inset 0px 67px 0px rgb(196, 28, 28);
+}
+
+#book-now-header {
+   display: none;
+}
+
+/* 2. ---Main Nav--- */
+
+#hero img {
+   /* stretch image across all 3 grid columns */
+   grid-column: 1/-1;
+   /* set the image to stay in first row, so overlap can happen */
+   grid-row: 1/1;
+   /* make sure the image stays centered at xl screen sizes */
+   justify-self: center;
+}
+
+#hero .grid-con {
+   /* tell the overlapping 12 column grid to live in the center
+   of the 3 column grid */
+   grid-column: 2/3;
+   /* tell the overlappig grid to live in row 1 so it overlaps the image */
+   grid-row: 1/1;
+   /* get rid of margin 0 auto from original .grid-con class */
+   margin: 0;
+}
+
+#hero-main {
+   height: 220px;
+   object-fit: cover;
+}
+
+#book-now-hero {
+   height: 67px;
+}
