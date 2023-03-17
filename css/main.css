@@ -104,11 +104,16 @@ input, textarea {
 }
 
 .book-now:hover {
-   box-shadow: inset 0px 67px 0px rgb(196, 28, 28);
+   box-shadow: inset 0px -120px 0px rgb(196, 28, 28);
 }
 
 #book-now-header {
    display: none;
+}
+
+#logo {
+   max-width: 288px;
+   margin-bottom: 20px;
 }
 
 /* 2. ---Main Nav--- */
@@ -139,4 +144,191 @@ input, textarea {
 
 #book-now-hero {
    height: 67px;
+}
+
+#booking-calendar {
+   display: none;
+}
+
+.hero-img-h2 span, .hero-img-h3 span {
+   color: #9a2018;
+   font-size: 12px;
+}
+
+.hero-img-h2, .hero-img-h3 {
+   background-color: #fff;
+   padding: 10px 15px;
+   font-size: 14px;
+}
+
+#hero-heading-box {
+   align-self: end;
+}
+
+.line-seperator {
+   margin-top: 20px;
+   border-top: solid 3px #CF6666;
+   padding-top: 20px;
+}
+
+#hero-summary p {
+   font-size: 14px;
+   line-height: 22px;
+   margin-bottom: 20px;
+}
+
+
+/* 10. ---Tablet Sized Screens--- */
+
+@media screen and (min-width: 768px) {
+
+   #sticky-nav-con {
+      position: sticky;
+      background-color: #fff;
+      top: 0px;
+      border-bottom: solid 1px #c3c3c3;
+   }
+
+   #button {
+      display: none;
+   }
+
+   #logo {
+      margin-top: 32px;
+      order: -1;
+   }
+
+   #burger-con {
+      display: block;
+      font-size: 12px;
+   }
+
+   #burger-con ul li, #burger-con ul li:first-child {
+      border: none;
+      display: inline;
+   }
+
+   #main-nav ul li a {
+      display: inline;
+   }
+
+   #burger-con ul li {
+      margin-right: 10px;
+   }
+
+   #burger-con ul li:last-child {
+      margin-right: 0;
+   }
+
+   #main-nav {
+      margin-top: 4%;
+      margin-bottom: 4%;
+      border-left: 2px solid #707070;
+      padding-left: 30px;
+   }
+
+   #book-now-header {
+      display: flex;
+      margin-right: -16px;
+   }
+
+   #book-now-hero {
+      display: none;
+   }
+
+   #hero-main {
+      height: 455px;
+   }
+
+   #booking-calendar {
+      display: block;
+      height: 200px;
+      background-color: #9a2018;
+      color: #fff;
+      padding: 30px 10px 20px 10px;
+      margin-top: 50px;
+   }
+
+   #booking-calendar h3 {
+      font-size: 12px;
+      margin-bottom: 10px;
+   }
+
+   #booking-calendar input[type="date"], #booking-calendar input[type="number"] {
+      padding: 4px;
+      border: 2px solid #d6d6d6;
+      background-color: #f7f7f7;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      font: inherit;
+      width: 100%;
+   }
+
+   #booking-calendar input[type="submit"] {
+      padding: 12px 0 12px 0;
+      background: #CF6666;
+      color: #fff;
+      border: solid 2px #CF6666;
+      border-radius: 10px;
+      width: 100%;
+      font-size: 12px;
+      text-align: center;
+      transition: all 1s ease-in-out;
+   }
+
+   #booking-calendar input[type="submit"]:hover {
+      border: solid 2px #fff;
+   }
+
+   .hero-img-h2, .hero-img-h3 {
+      padding: 30px 15px;
+      font-size: 18px;
+   }
+   .hero-img-h2 span, .hero-img-h3 span {
+      font-size: 14px;
+   }
+
+}
+
+/* 11. ---Desktop (1200px) Sized Screens */
+
+@media screen and (min-width: 1200px) {
+   #main-header {
+      height: 110px;
+   }
+
+   #main-nav {
+      margin-top: 2%;
+      margin-bottom: 2%;
+      margin-left: 25px;
+   }
+
+   #burger-con ul li {
+      margin-right: 25px;
+      font-size: 16px;
+   }
+
+   #burger-con {
+      margin-top: 28px;
+   }
+
+   .book-now {
+      font-size: 18px;
+   }
+
+   #booking-calendar {
+      height: 234px;
+   }
+
+   #check-availability {
+      margin-top: 10px;
+   }
+
+   .hero-img-h2, .hero-img-h3 {
+      font-size: 24px;
+   }
+
+   .hero-img-h2 span, .hero-img-h3 span {
+      font-size: 16px;
+   }
 }
